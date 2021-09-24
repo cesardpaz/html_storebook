@@ -1,0 +1,136 @@
+@use '././base/variables' as v;
+
+
+.header{
+    background-color: v.$white;
+}
+.header__top{
+    padding: .65em 2em;
+    border-bottom: 1px solid #d4d4d4;
+    display: none;
+
+    @media screen and (min-width: 991px) {
+        display: block;
+    }
+
+    ul{
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        margin: 0;
+        li {
+            a {
+                color: v.$gray;
+                text-decoration: none;
+                font-size: .75em;
+                padding-right: 10px;
+                margin-right: 10px;
+                border-right: 1px solid #d4d4d4;
+                text-transform: uppercase;
+                font-weight: 700;
+                
+
+                &:hover {
+                    color: v.$green;
+                }
+            }
+            &:last-child {
+                a{
+                    margin-right: 0;
+                    padding-right: 0;
+                    border-right: none;
+                }
+                
+            }
+        }
+    }
+}
+
+
+.header__main {
+    
+    padding: 1.2em .6em;
+    border-bottom: 1px solid #d4d4d4;
+
+    @media screen and (min-width: 991px) {
+        padding: 1.6em 2em;
+    }
+
+    figure {
+        margin: 0;
+        display: flex;
+        img {
+            width: 200px;
+            height: auto;
+            
+        }
+    }
+
+    .header__search {
+        display: none;
+        @media screen and (min-width: 991px) {
+            display: block;
+        }
+    }
+
+    form {
+        position: relative;
+        input {
+            width: 400px;
+            padding: 1.2em 1.5em;
+            border-radius: 2em;
+            border: 1px solid #d4d4d4;;
+            font-size: 0.9em;
+            color: v.$gray;
+            &:active{
+                outline: none;
+            }
+            &:focus {
+                outline: none;
+            }
+        }
+        button {
+            background-color: v.$orange;
+            color: v.$white;
+            border: none;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            position: absolute;
+            right: .5em;
+            top: .4em;
+            
+
+            
+        }
+    }
+
+    .header__main__shopping {
+        button {
+            background-color: transparent;
+            border: none;
+            color: v.$black;
+            font-size: 2em;
+            position: relative;
+
+            span {
+                position: absolute;
+                top: -6px;
+                right: -11px;
+                font-size: .4em;
+                width: 18px;
+                height: 18px;
+                background-color: v.$orange;
+                border-radius: 50%;
+                color: v.$white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                line-height: .6em;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}
