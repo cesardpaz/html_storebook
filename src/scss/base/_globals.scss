@@ -1,5 +1,6 @@
 @use 'variables' as s;
 
+/* global */
 *{
     font-family: s.$font;
     box-sizing: border-box;
@@ -30,4 +31,16 @@ body {
 .p-at {
     padding: 0 1.5rem;
     box-sizing: border-box;
+}
+
+.overlay {
+    position: fixed;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background: rgba(0,0,0,.4);
+    display: none;
 }

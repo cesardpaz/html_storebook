@@ -1,8 +1,9 @@
 @use '././base/variables' as v;
 
-
+/*header*/
 .header{
     background-color: v.$white;
+    position: relative;
 }
 .header__top{
     padding: 1rem 1.5rem;
