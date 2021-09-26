@@ -605,18 +605,52 @@ body {
   margin: 0;
   margin: 0 0 1rem;
 }
-.main__wdgt__card .wdgt__card__item button {
-  width: 150px;
+
+.wdgt__card__buy {
+  display: flex;
+}
+.wdgt__card__buy input {
+  width: 50px;
+  font-size: 1.5rem;
+  text-align: center;
+  border: none;
+}
+.wdgt__card__buy input:focus-visible {
+  outline: none;
+}
+.wdgt__card__buy .wdgt__card__quantity {
+  display: flex;
+  flex-direction: column;
+  margin-right: 5px;
+}
+.wdgt__card__buy .wdgt__card__quantity i {
+  display: block;
+  width: 20px;
+  height: 20px;
+  font-size: 1.4rem;
+  background-color: #064532;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-bottom: 1px solid #fff;
+}
+.wdgt__card__buy .wdgt__card__quantity i:last-child {
+  border-bottom: none;
+}
+.wdgt__card__buy button {
+  width: calc(100% - 75px);
   background-color: transparent;
   border: 0.2rem solid #064532;
   color: #064532;
   padding: 1rem 0.5rem;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 700;
   text-transform: uppercase;
   transition: background-color 0.3s ease;
 }
-.main__wdgt__card .wdgt__card__item button:hover {
+.wdgt__card__buy button:hover {
   color: #fff;
   background-color: #064532;
 }
