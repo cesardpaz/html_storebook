@@ -1,12 +1,13 @@
 @use '././base/variables' as v;
 
 /*header*/
+
 .header{
     background-color: v.$white;
     position: relative;
 }
 .header__top{
-    padding: 1rem 1.5rem;
+    padding: 1rem 0rem;
     border-bottom: 0.1rem solid #d4d4d4;
     display: none;
 
@@ -29,7 +30,13 @@
                 border-right: 0.1rem solid #d4d4d4;
                 text-transform: uppercase;
                 font-weight: 700;
-                
+
+                &:before {
+                    margin-right: 3px;
+                    display: inline-block;
+                    font: normal normal normal 14px/1 FontAwesome;
+                    font-size: inherit;
+                }
 
                 &:hover {
                     color: v.$green;
@@ -50,11 +57,11 @@
 
 .header__main {
     
-    padding: 1.2rem 1.5rem;
+    padding: 1.2rem 0rem;
     border-bottom: 1px solid #d4d4d4;
 
     @media screen and (min-width: 991px) {
-        padding: 2rem 1.5rem;
+        padding: 2rem 0rem;
     }
 
     figure {

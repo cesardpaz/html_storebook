@@ -398,7 +398,7 @@ body {
 }
 
 .header__top {
-  padding: 1rem 1.5rem;
+  padding: 1rem 0rem;
   border-bottom: 0.1rem solid #d4d4d4;
   display: none;
 }
@@ -423,6 +423,12 @@ body {
   text-transform: uppercase;
   font-weight: 700;
 }
+.header__top ul li a:before {
+  margin-right: 3px;
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+}
 .header__top ul li a:hover {
   color: #064532;
 }
@@ -433,12 +439,12 @@ body {
 }
 
 .header__main {
-  padding: 1.2rem 1.5rem;
+  padding: 1.2rem 0rem;
   border-bottom: 1px solid #d4d4d4;
 }
 @media screen and (min-width: 991px) {
   .header__main {
-    padding: 2rem 1.5rem;
+    padding: 2rem 0rem;
   }
 }
 .header__main figure {
@@ -538,6 +544,7 @@ body {
   justify-content: center;
 }
 
+/* Home */
 .main__wdgt__title {
   padding: 0 1.5rem;
 }
