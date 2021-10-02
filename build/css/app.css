@@ -357,6 +357,10 @@ body {
   background-color: #f8f8f8;
 }
 
+img {
+  width: 100%;
+}
+
 .container {
   width: 1200px;
   max-width: 100%;
@@ -389,6 +393,16 @@ body {
   z-index: 10;
   background: rgba(0, 0, 0, 0.4);
   display: none;
+}
+
+.overlay.active {
+  display: block;
+}
+
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /*header*/
@@ -525,7 +539,7 @@ body {
   position: absolute;
   top: 100%;
   right: 1.5rem;
-  padding: 4rem 5rem;
+  padding: 3rem 3rem;
   display: none;
 }
 .minicart i {
@@ -542,6 +556,60 @@ body {
   align-items: center;
   flex-direction: column;
   justify-content: center;
+}
+
+.minicart__item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.minicart__item:last-child {
+  margin-bottom: 0;
+}
+.minicart__item figure {
+  width: 50px;
+}
+.minicart__item .minicart__item__meta {
+  width: 200px;
+  padding: 0 7px;
+}
+.minicart__item .minicart__item__meta h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin: 0 0 5px;
+  color: #064532;
+}
+.minicart__item .minicart__item__meta h4 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin: 0 0 5px;
+}
+.minicart__item .minicart__item__meta h5 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin: 0;
+}
+.minicart__item .minicart__item__meta h5 .minicart__item__qty {
+  font-size: 1.2rem;
+}
+.minicart__item .minicart__item__meta h5 .minicart__item__price {
+  font-size: 1.5rem;
+  display: inline-block;
+  margin-left: 10px;
+  font-weight: 700;
+  color: #f1592b;
+}
+.minicart__item .minicart__item__remove {
+  width: 30px;
+  padding: 0;
+  background: transparent;
+  margin: 0;
+  border: none;
+  color: #d9001c;
+}
+.minicart__item .minicart__item__remove i {
+  font-size: 3rem;
 }
 
 /* Home */

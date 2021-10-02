@@ -11,6 +11,9 @@ body {
     background-color: #f8f8f8;
     
 }
+img{
+    width: 100%;
+}
 .container {
     width: 1200px;
     max-width: 100%;
@@ -44,3 +47,13 @@ body {
     background: rgba(0,0,0,.4);
     display: none;
 }
+
+.overlay.active{
+    display: block;
+}
+
+.truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
