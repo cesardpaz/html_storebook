@@ -50,10 +50,14 @@
         padding-left: 2rem;
 
         h2 {
-            font-size: 2rem;
-            font-weight: 400;
-            color: v.$green;
-            margin: 0 0 1rem;
+       
+            a {
+                display: inline-block;
+                font-size: 2rem;
+                font-weight: 400;
+                color: v.$green;
+                margin: 0 0 1rem;
+            }
         }
 
         h3 {
@@ -100,7 +104,7 @@
         i{
             display: block;
             width: 20px;
-            height: 20px;
+            height: 100%;
             font-size: 1.4rem;
             background-color: v.$green;
             color: v.$white;
@@ -117,7 +121,8 @@
     }
 
     button {
-        width: calc(100% - 75px);
+        max-width: calc(100% - 7.5rem);
+        width: 15rem;
         background-color: transparent;
         border: 0.2rem solid v.$green;
         color: v.$green;
@@ -125,7 +130,7 @@
         font-size: 1.3rem;
         font-weight: 700;
         text-transform: uppercase;
-        transition: background-color 0.3s ease;
+        transition: all 0.3s ease;
 
         &:hover {
             color: v.$white;

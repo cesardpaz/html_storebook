@@ -7,17 +7,26 @@
     font-size: 62.5%;
 }
 
+a {
+    text-decoration: none;
+}
+button {
+    background-color: transparent;
+    border: none;
+}
+
 body {
     background-color: #f8f8f8;
     
 }
 img{
-    width: 100%;
+    max-width: 100%;
 }
 .container {
     width: 1200px;
     max-width: 100%;
     margin: 0 auto;
+    position: relative;
 }
 
 .flex-bt {
@@ -56,4 +65,17 @@ img{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-  }
+}
+
+.box_shadow {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex_ac{
+    align-items: center;
+}
